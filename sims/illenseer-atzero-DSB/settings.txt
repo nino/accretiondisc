@@ -1,0 +1,13 @@
+G = 1.0
+Mstar = 1.0
+viscositymodel = DSB
+r = collect(linspace(-6,25,200))
+time = collect(linspace(1,1.0e6,1.0e6))
+Ω₀ = Startvalues taken from SSDisk
+
+Comment:
+Simulation based on the simplest case in the Illenseer (2015) paper.
+This will be useful to verify the validity of the solver.
+Initial x is -3/2 until 0 on the r axis, then steps to -1.
+delta_x = 0.01, delta_t = 0.1, time from 1 till 1000.
+

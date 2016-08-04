@@ -1,0 +1,11 @@
+G = 1.0
+Mstar = 1.0
+viscositymodel = DSB
+r = collect(linspace(-6,25,200))
+time = collect(linspace(1,1.0e6,1.0e6))
+Ω₀ = Σ₀ = 1.0 * gauss(r, 2.0, 2.4); Ω₀ = ΩfromΣ(Σ₀, r, 1.0)
+
+Comment:
+Σ₀ is a narrow bell curve, Ω₀ gets calculated based
+on that.
+
